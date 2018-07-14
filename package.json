@@ -1,5 +1,5 @@
 {
-  "name": "how-to-learn",
+  "name": "how-to-code",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -13,6 +13,8 @@
   "dependencies": {
     "choo": "^6.12.1",
     "choo-service-worker": "^2.4.0",
+    "gr8": "^3.1.5",
+    "ress": "^1.2.2",
     "sheetify": "^7.3.3",
     "tachyons": "^4.10.0"
   },

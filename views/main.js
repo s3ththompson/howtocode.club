@@ -1,6 +1,7 @@
 var html = require('choo/html')
+var css = require('sheetify')
 
-var TITLE = 'how-to-learn - main'
+var TITLE = 'How To Learn How To Code'
 
 module.exports = view
 
@@ -8,151 +9,79 @@ function view (state, emit) {
   if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
 
   return html`
-    <body class="code lh-copy">
-      <main class="pa3 cf center">
-        <section class="fl mw6 w-50-m w-third-l pa3">
-          <h2>1.</h2>
-          <p>
-            Welcome to your new Choo application.
-            We're very happy you've made it this far.
-          </p>
-
-          <p>
-            You're now in control of your own Choo app. The moment you decide to
-            deploy it, it'll work offline and on any device.
-          </p>
-
-          <br>
-        </section>
-
-        <section class="fl mw6 w-50-m w-third-l pa3">
-          <h2>2.</h2>
-
-          <p>
-            We've outfitted your project with a small selection of commands to
-            help you achieve results faster:
-          </p>
-
-          <ul>
-            <li class="mb3">
-              <strong>npm start</strong><br>
-              start your project for local development.
-            </li>
-            <li class="mb3">
-              <strong>npm run build</strong><br>
-              compile your project for production.
-            </li>
-            <li class="mb3">
-              <strong>npm run inspect</strong><br>
-              visualize your project's dependencies.
-            </li>
-            <li class="mb3">
-              <strong>npm run create</strong><br>
-              scaffold a new file.
-            </li>
-          </ul>
-
-          <br>
-        </section>
-
-        <section class="fl mw6 w-50-m w-third-l pa3">
-          <h2>3.</h2>
-
-          <p>
-            Your project also comes with a few directories. These names have
-            special meanings for the build tool, so it's good to know what they
-            do.
-          </p>
-
-          <ul>
-            <li class="mb3">
-              <strong>assets/</strong><br>
-              Static files that can be served up, such as images and fonts.
-            </li>
-            <li class="mb3">
-              <strong>components/</strong><br>
-              Reusable fragments that can be composed into views.
-            </li>
-            <li class="mb3">
-              <strong>stores/</strong><br>
-              Pieces of logic that are shared by multiple components.
-            </li>
-            <li class="mb3">
-              <strong>views/</strong><br>
-              Combinations of components that are mapped to routes.
-            </li>
-          </ul>
-
-          <br>
-        </section>
-
-        <section class="fl mw6 w-50-m w-third-l pa3">
-          <h2>4.</h2>
-
-          <p>
-            So far we've provided you with one base view, <a
-            href="/oh-no">one fallback view</a>, and one store. This serves
-            as an example. A place to start from. It's your project now, so
-            go ahead and delete them once you know how they work.
-          </p>
-
-          <p>Number of clicks stored: ${state.totalClicks}</p>
-
-          <button class="dim ph3 ba bw1 pv2 b--black pointer bg-white"
-            onclick=${handleClick}>
-            Emit a click event
-          </button>
-
-          <br><br>
-        </section>
-
-        <section class="fl mw6 w-50-m w-third-l pa3">
-          <h2>5.</h2>
-
-          <p>
-            To make your development journey more pleasant, we've also
-            included <a
-            href="https://github.com/choojs/choo-devtools">devtools</a>. If
-            you open your browser console, here's a selection of the
-            commands that are at your disposal:
-
-            <ul>
-              <li class="mb3">
-                <strong>choo.state</strong><br>
-                Log the current application state.
+    <body class="ff-sans x xjb">
+      <div class="s2 vh100 bgc-offwhite psf">
+        <header class="c-blue x xjc xac h100">
+          <a href="/">
+            <div>
+              <h1 class="dn">2. to 1. How 3. Code</h1>
+              <span class="db title"><span class="c-red">2.</span> to</span>
+              <span class="db title"><span class="c-red">1.</span> How</span>
+              <span class="db title"><span class="c-red">3.</span> Code</span>
+            </div>
+          </a>
+        </header>
+        <h2 class="psa t0 r0 l0 m1 c-gray tac">An opinionated approach to making websites.</h2>
+        <h2 class="psa b0 r0 l0 m1 c-gray tac">Beta session starts Monday, July 16, 2018.</h2>
+      </div>
+      <div class="s2 vh100 psf r0 psn">
+        <div class="os h100 p1">
+          <h3 class="c-gray">Introduction</h3>
+          <p>How to Code is a free summer course on making original, creative websites from scratch. Participants will learn how to use HTML, CSS, and JavaScript with a special emphasis on code style, debugging, and reading source.</p>
+          <h3 class="c-gray">Who is this course for?</h3>
+          <p>The course is for students adept at picking up technical skills with the right resources, patience, and assistance. No prior coding knowledege required.</p>
+          <p>Students should have strong opinions about design, internet culture, artistic development, and professional ethics.</p>
+          <h3 class="c-gray">Course Format</h3>
+          <p>The class will meet once a week (usually on Monday nights). Lectures will be recorded and streamed for remote viewing.</p>
+          <p>Class sessions will include a short lecture, group discussion, and review of individual projects.</p>
+          <p>Students will be expected to spend time outside of class working on short assignments, continuing self-study, and completing an individual project.</p>
+          <h3 class="c-gray">Schedule <span class="c-red">[Beta session]</span></h3>
+            <ol>
+              <li>
+                0. Introduction → <a href="/intro">notes</a>
               </li>
-              <li class="mb3">
-                <strong>choo.log</strong><br>
-                Log the last 150 events received by the event bus.
+              <li>
+                1. Hypertext → July 16, 6:30pm
               </li>
-              <li class="mb3">
-                <strong>choo.emit</strong><br>
-                Emit an event inside the application event bus.
+              <li>
+                2. Style → July 23, 6:30pm
               </li>
-              <li class="mb3">
-                <strong>choo.help</strong><br>
-                See an overview of all available commands.
+              <li>
+                3. Script I → July 30, 6:30pm
               </li>
-            </ul>
-          </p>
-        </section>
-
-        <section class="fl mw6 w-50-m w-third-l pa3">
-          <h2>6.</h2>
-
-          <p>
-            And that's about it! Thanks for reading. If you have any
-            questions, check out the <a  href="https://choo.io">docs</a> or reach
-            out on <a href="https://github.com/choojs/choo">GitHub</a> or <a
-            href="https://www.irccloud.com/irc/freenode/channel/choo">IRC</a>.
-            We're online everyday, and always around to help. Happy hacking!
-          </p>
-        </section>
-      </main>
+              <li>
+                4. Script II → August 6, 6:30pm
+              </li>
+              <li>
+                5. Frameworks → TBA
+              </li>
+              <li>
+                6. Introspection → TBA
+              </li>
+              <li>
+                7. Beyond → TBA
+              </li>
+            </ol>
+          <h3 class="c-gray">Location</h3>
+          <div class="x xjb">
+            <div class="s2 pr1">
+              <h4 class="mb0">In Person:</h4>
+              <address>
+                180 York St.<br/>
+                New Haven, CT 06511
+              </address>
+            </div>
+            <div class="s2">
+              <h4 class="mb0">Remote:</h4>
+              <p class="tdlt mb0">Live Stream</p>
+              <p class="tdlt">Video Archive</p>
+            </div>
+          </div>
+          <h3 class="c-gray">Colophon</h3>
+          <p class="mb0">Course taught by <a href="https://seththompson.org">Seth Thompson</a> (<a href="mailto:s3ththompson@gmail.com">s3ththompson@gmail.com</a>) and friends.</p>
+          <p>Cover design inspired by <span class="fsi">How to See</span> by <a href="https://www.theparisreview.org/blog/2016/09/19/quotable-david-salle/">David Salle</a>.</p>
+        </div>
+      </div>
     </body>
   `
-
-  function handleClick () {
-    emit('clicks:add', 1)
-  }
 }
