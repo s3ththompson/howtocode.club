@@ -10,7 +10,7 @@ function view (state, emit) {
 
   return html`
     <body class="ff-sans x xjb">
-      <div class="s2 vh100 bgc-offwhite psf">
+      <div class="dn sm-db s2 vh100 bgc-offwhite psf">
         <header class="c-blue x xjc xac h100">
           <a href="/">
             <div>
@@ -24,8 +24,13 @@ function view (state, emit) {
         <h2 class="psa t0 r0 l0 m1 c-gray tac">An opinionated approach to making websites.</h2>
         <h2 class="psa b0 r0 l0 m1 c-gray tac">Beta session starts Monday, July 16, 2018.</h2>
       </div>
-      <div class="s2 vh100 psf r0 psn">
+      <div class="s1 sm-s2 vh100 psf r0 psn">
         <div class="os h100 p1">
+          <div class="sm-dn c-blue mb1">
+            <span class="db"><span class="c-red">2.</span> to</span>
+            <span class="db"><span class="c-red">1.</span> How</span>
+            <span class="db"><span class="c-red">3.</span> Code</span>
+          </div>
           <h3 class="c-gray">Introduction</h3>
           <p>How to Code is a free summer course on making original, creative websites from scratch. Participants will learn how to use HTML, CSS, and JavaScript with a special emphasis on code style, debugging, and reading source.</p>
           <h3 class="c-gray">Who is this course for?</h3>
