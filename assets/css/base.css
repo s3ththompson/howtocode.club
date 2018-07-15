@@ -91,5 +91,11 @@ span.title {
   letter-spacing: -0.3rem;
   line-height: 0.9;
   font-weight: bold;
-  font-size: 7.2rem;
+  font-size: 5rem;
+}
+
+@media (min-width: 1024px) {
+  span.title {
+    font-size: 7.2rem;
+  }
 }

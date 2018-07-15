@@ -12,6 +12,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 app.route('/', require('./views/main'))
 app.route('/intro', require('./views/intro'))
+app.route('/404', require('./views/404'))
 app.route('/*', require('./views/404'))
 
 module.exports = app.mount('body')
