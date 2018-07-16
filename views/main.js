@@ -8,6 +8,13 @@ module.exports = view
 function view (state, emit) {
   if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
 
+  var subscribe = (state.query.subscribe == 'success') ? html`<p class="c-red">Subscribed!</p>` : html`<form class="mb1" action="https://jumprock.co/mail/howtocode" method="post">
+    <input type="text" name="trapit" value="" style="display:none">
+    <input type="text" name="email" placeholder="Email Address" required />
+    <input type="hidden" name="after" value="https://howtocode.club/?subscribe=success">
+    <input class="c-blue" type="submit" value="→ Subscribe" />
+  </form>`
+
   return html`
     <body class="ff-sans x xjb">
       <div class="dn sm-db s2 vh100 bgc-offwhite psf">
@@ -46,16 +53,16 @@ function view (state, emit) {
                 0. Introduction → <a href="/intro">notes</a>
               </li>
               <li>
-                1. Hypertext → July 16, 6:30pm
+                1. Hypertext → July 16, 6:30pm ET, <a href="/hypertext">slides</a>
               </li>
               <li>
-                2. Style → July 23, 6:30pm
+                2. Style → July 23, 6:30pm ET
               </li>
               <li>
-                3. Script I → July 30, 6:30pm
+                3. Script I → July 30, 6:30pm ET
               </li>
               <li>
-                4. Script II → August 6, 6:30pm
+                4. Script II → August 6, 6:30pm ET
               </li>
               <li>
                 5. Frameworks → TBA
@@ -82,6 +89,8 @@ function view (state, emit) {
               <p class="tdlt">Video Archive</p>
             </div>
           </div>
+          <h3 class="c-gray">Subscribe for Updates</h3>
+          ${subscribe}
           <h3 class="c-gray">Colophon</h3>
           <p class="mb0">Course taught by <a href="https://seththompson.org">Seth Thompson</a> (<a href="mailto:s3ththompson@gmail.com">s3ththompson@gmail.com</a>) and friends.</p>
           <p>Cover design inspired by <span class="fsi">How to See</span> by <a href="https://www.theparisreview.org/blog/2016/09/19/quotable-david-salle/">David Salle</a>.</p>

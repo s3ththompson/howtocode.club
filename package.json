@@ -13,6 +13,7 @@
   "dependencies": {
     "choo": "^6.12.1",
     "choo-service-worker": "^2.4.0",
+    "choo-store": "^1.0.0",
     "gr8": "^3.1.5",
     "ress": "^1.2.2",
     "sheetify": "^7.3.3",
