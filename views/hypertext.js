@@ -20,6 +20,10 @@ function view (state, emit) {
     html`<div>
       <h2 class="c-red">1: Hypertext</h2>
     </div>`,
+    html`<div class="p2">
+      <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank"><img class="mx100" src="/assets/img/hypertext-cern.jpg"></a>
+      <p class="tac">The first website</p>
+    </div>`,
     html`<div>
       <h3 class="c-gray">What Makes a Good Website?</h3>
       ${ol(html`<p>The website is functional.</p>`, c.next())}
@@ -103,6 +107,9 @@ function view (state, emit) {
     </div>`,
     html`<div>
       <p>The best way to learn about the usage of HTML elements is to read good documentation, such as the Mozilla Developer Network docs, maintained by a consortium of web browser vendors:</p>
+      <div class="p2">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img class="mx100" src="/assets/img/hypertext-mdn.jpg"></a>
+      </div>
       <p><a class="arrow" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Documentation</a></p>
     </div>`,
     html`<div>
@@ -122,6 +129,9 @@ function view (state, emit) {
     </div>`,
     html`<div>
       <p>One other important resource is Stack Overflow, an incredible question-and-answer site that will be a useful resource when you run into a specific issue or bug with your code:</p>
+      <div class="p2">
+        <a href="https://stackoverflow.com/questions/29869743/what-is-meta-charset-utf-8" target="_blank"><img class="mx100" src="/assets/img/hypertext-stackoverflow.jpg"></a>
+      </div>
       <p><a class="arrow" href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></p>
       <p>Their homepage isn't very useful, but you will often see Stack Overflow results in Google searches. Searching <a href="https://www.google.com/search?q=what+does+meta+charset%3D%22utf-8%22+mean" target="_blank">"what does meta charset="utf-8" mean"</a>, for example, yields this helpful <a href="https://stackoverflow.com/questions/29869743/what-is-meta-charset-utf-8" target="_blank">Stack Overflow answer</a>.</p>
     </div>`,
@@ -138,6 +148,9 @@ function view (state, emit) {
       <p>If it's your first time working in this folder, install the web server dependencies by typing <code>$ npm install</code>.</p>
       <p>Now start the web server by typing <code>$ npm run start</code>. (We'll talk more later about what those commands are doing and what kind of server is running. If you're curious, you can learn more about the server we're running <a href="https://github.com/mattdesl/budo" target="_blank">here</a>.)</p>
       <p>Open <a href="http://localhost:9966">localhost:9966</a> in your browser to see the web page.</p>
+    </div>`,
+    html`<div class="p2">
+      <img class="mx100" src="/assets/img/hypertext-manet.jpg">
     </div>`,
     html`<div>
       <p>Using what you've learned about HTML, try editing some of the content of <code>index.html</code> and seeing the result. Here are some things to try:</p>

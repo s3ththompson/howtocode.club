@@ -24,6 +24,29 @@ function view (state, emit) {
       <p>Come to the first class with an idea for a website that you would like to build. Pick something technically simple, but rich in concept or creative direction. We will talk more together about what makes some websites simple to build and others more complex.</p>
     </div>`,
     html`<div>
+      <p>Here are some examples of projects which use web design to highlight content in novel ways:</p>
+      <div class="p2">
+        <a href="https://newcomputers.group/ready2use.html" target="_blank"><img class="mx100" src="/assets/img/project-idea-new.jpg"></a>
+        <p class="tac">An essay about computers</p>
+      </div>
+    </div>`,
+    html`<div class="p2">
+      <a href="http://fact.110west40th.com/" target="_blank"><img class="mx100" src="/assets/img/project-idea-fact.jpg"></a>
+      <p class="tac">An archive for an out-of-print magazine</p>
+    </div>`,
+    html`<div class="p2">
+      <a href="https://gt-walsheim.com/" target="_blank"><img class="mx100" src="/assets/img/project-idea-gt.jpg"></a>
+      <p class="tac">A font specimen</p>
+    </div>`,
+    html`<div class="p2">
+      <a href="http://ktown92.com/" target="_blank"><img class="mx100" src="/assets/img/project-idea-ktown.jpg"></a>
+      <p class="tac">An interactive video documentary about the 1992 LA K-Town riots</p>
+    </div>`,
+    html`<div class="p2">
+      <a href="http://justinsloane.com/" target="_blank"><img class="mx100" src="/assets/img/project-idea-sloane.jpg"></a>
+      <p class="tac">A portfolio of individual work</p>
+    </div>`,
+    html`<div>
       <h3 class="c-gray">Assignment 2: Set up your developer environment</h3>
       <p>Ideally, the best computer for this class is a macOS or Linux laptop. If you are using a Windows machine, please see the additional Windows instructions at the bottom of the <a href="/tools">tools guide</a>.</p>
       <ol>

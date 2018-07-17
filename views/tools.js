@@ -19,7 +19,10 @@ function view (state, emit) {
       <p>Technically, you could code an entire website using your computer's built in text editor. However, the following tools and programs will allow you to be more productive and access a larger ecosystem of code, plugins, and conveniences.</p>
       </div>`,
     html`<div>
-        <h3 class="c-gray">Text Editor</h3>
+      <h3 class="c-gray">Text Editor</h3>
+      <a href="https://www.sublimetext.com/" target="_blank"><img class="mx100" src="/assets/img/tools-sublime.jpg"></a>
+    </div>`,
+    html`<div>
         <h4 class="fsi">What is it for?</h4>
         <p>A text editor allows you to write and edit text files which make up the code for your website. You can write in any programming language with any text editor. Any file can contain code, but you should save the file with a file extension that matches the language contained within. For example, you should save an HTML file with the <code>.html</code> extension.</p>
         <h4 class="fsi">What makes a good text editor?</h4>
@@ -34,7 +37,10 @@ function view (state, emit) {
         <p><a class="arrow" href="https://www.sublimetext.com/" target="_blank">Sublime Text 3</a></p>
       </div>`,
     html`<div>
-        <h3 class="c-gray">Terminal / Shell / Command Line</h3>
+      <h3 class="c-gray">Terminal / Shell / Command Line</h3>
+      <a href="https://www.hyper.is" target="_blank"><img class="mx100" src="/assets/img/tools-terminal.jpg"></a>
+    </div>`,
+    html`<div>
         <h4 class="fsi">What is it for?</h4>
         <p>The terminal is a way to whisper into your computer's ear. The terminal allows you to run programs and manipulate files using text commands that afford much more power and control than using other applications with user interfaces.</p>
         <p>For example, moving all of the JPEG images from one folder to another is one command in the terminal, while the equivalent operation using your mouse and your computer's file explorer might take much longer.</p>
