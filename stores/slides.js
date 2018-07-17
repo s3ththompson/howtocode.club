@@ -8,7 +8,6 @@ module.exports = createStore({
    },
   events: {
     setup: ({ store, state, emitter}) => {
-      document.onkeydown = checkKey
       function checkKey(e) {
         e = e || window.event;
         if (e.keyCode == '37') {
@@ -20,9 +19,11 @@ module.exports = createStore({
       }
 
       if (state.query.slide) {
+        document.onkeydown = checkKey
         store.index = state.query.slide
         store.show = true
       } else {
+        document.onkeydown = null
         emitter.emit('slides:reset')
       }
       emitter.emit('render')

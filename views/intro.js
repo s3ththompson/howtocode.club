@@ -47,22 +47,29 @@ function view (state, emit) {
       <p class="tac">A portfolio of individual work</p>
     </div>`,
     html`<div>
+      <p>Here are some other resources for finding examples of interesting or innovative websites:</p>
+      <p><a class="arrow" href="https://hoverstat.es/" target="_blank">Hover States</a></p>
+      <p><a class="arrow" href="https://www.are.na/" target="_blank">Are.na</a></p>
+      <p>Try to collect your own set of sites for inspiration. Think about why a certain site was designed the way that it was. How does the interactivity of the web page help or hurt an understanding of the contents?</p>
+    </div>`,
+    html`<div>
       <h3 class="c-gray">Assignment 2: Set up your developer environment</h3>
       <p>Ideally, the best computer for this class is a macOS or Linux laptop. If you are using a Windows machine, please see the additional Windows instructions at the bottom of the <a href="/tools">tools guide</a>.</p>
       <ol>
-        <li>1. Install <a href="https://hyper.is/">Hyper</a> (a terminal)</li>
-        <li>2. Install <a href="https://nodejs.org/en/">Node.js 10.6.0</a> (a JavaScript runtime)</li>
-        <li>3. Install <a href="https://www.sublimetext.com/">Sublime Text 3</a> (a text editor) </li>
-        <li>4. Install <a href="https://www.google.com/chrome/canary/">Chrome Canary</a> (a browser for developers) </li>
+        <li>Install <a href="https://hyper.is/">Hyper</a> (a terminal)</li>
+        <li>Install <a href="https://nodejs.org/en/">Node.js 10.6.0</a> (a JavaScript runtime)</li>
+        <li>Install <a href="https://www.sublimetext.com/">Sublime Text 3</a> (a text editor) </li>
+        <li>Install <a href="https://www.google.com/chrome/canary/">Chrome Canary</a> (a browser for developers) </li>
       </ol>
       <p>Spend some time familiarizing yourself with these tools and reading online about what they are used for (and perhaps their alternatives).</p>
       <p>Read the <a href="/tools">tools guide</a> to learn more.</p>
     </div>`,
     html`<div>
       <h3 class="c-gray">Reading</h3>
-      <p>→ <a href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/">What Is Code?</a> by Paul Ford, <span class="fsi">Bloomberg Businessweek</span> (2015)</p>
+      <p><a class="arrow" href="https://www.bloomberg.com/graphics/2015-paul-ford-what-is-code/" target="_blank">What Is Code?</a> by Paul Ford, <span class="fsi">Bloomberg Businessweek</span> (2015)</p>
     </div>`
   ]
 
+  if (state.slides.show && state.slides.index > content.length - 1) emit('replaceState', state.href)
   return state.slides.show ? slide(content[state.slides.index], state) : page(content, state)
 }

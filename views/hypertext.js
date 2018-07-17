@@ -185,5 +185,6 @@ function view (state, emit) {
     </div>`
   ]
 
+  if (state.slides.show && state.slides.index > content.length - 1) emit('replaceState', state.href)
   return state.slides.show ? slide(content[state.slides.index], state) : page(content, state)
 }

@@ -20,7 +20,9 @@ function view (state, emit) {
       </div>`,
     html`<div>
       <h3 class="c-gray">Text Editor</h3>
-      <a href="https://www.sublimetext.com/" target="_blank"><img class="mx100" src="/assets/img/tools-sublime.jpg"></a>
+      <div class="p2">
+        <a href="https://www.sublimetext.com/" target="_blank"><img class="mx100" src="/assets/img/tools-sublime.jpg"></a>
+      </div>
     </div>`,
     html`<div>
         <h4 class="fsi">What is it for?</h4>
@@ -38,7 +40,9 @@ function view (state, emit) {
       </div>`,
     html`<div>
       <h3 class="c-gray">Terminal / Shell / Command Line</h3>
-      <a href="https://www.hyper.is" target="_blank"><img class="mx100" src="/assets/img/tools-terminal.jpg"></a>
+      <div class="p2">
+        <a href="https://www.hyper.is" target="_blank"><img class="mx100" src="/assets/img/tools-terminal.jpg"></a>
+      </div>
     </div>`,
     html`<div>
         <h4 class="fsi">What is it for?</h4>
@@ -100,5 +104,6 @@ function view (state, emit) {
       </div>`
   ]
 
+  if (state.slides.show && state.slides.index > content.length - 1) emit('replaceState', state.href)
   return state.slides.show ? slide(content[state.slides.index], state) : page(content, state)
 }
