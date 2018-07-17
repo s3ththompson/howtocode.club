@@ -14,18 +14,18 @@ h1, h2, h3, h4, h5, h6, h7 {
 button, input {
   outline: none;
 }
-ul, ol, li { 
-  list-style: none;
-}
 
 ul, ol {
   margin-bottom: 1.2rem;
+  margin-left: 1rem;
 }
 
 a {
   color: #263ffe;
   text-decoration: inherit;
 }
+
+a.arrow:before { content: '→\00a0'; color: #000;}
 
 p {
   margin-bottom: 1.2rem;
@@ -47,6 +47,18 @@ button {
   padding:0!important;
   font: inherit;
   cursor: pointer;
+}
+
+tt, code {
+  font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+}
+
+code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(27,31,35,0.05);
+  border-radius: 3px;
 }
 
 .monoimage {
@@ -98,4 +110,20 @@ span.title {
   span.title {
     font-size: 7.2rem;
   }
+}
+
+.svg-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #909195;
+}
+
+.svg-icon circle {
+  stroke: #909195;
+  stroke-width: 1;
 }
