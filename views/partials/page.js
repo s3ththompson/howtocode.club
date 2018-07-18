@@ -23,7 +23,7 @@ module.exports = function (content, state) {
         <h2 class="psa b0 r0 l0 m1 c-gray tac">${state.href == '' ? 'Beta session starts Monday, July 16, 2018.' : html`<a href="/">Home</a>`}</h2>
       </div>
       <div class="s1 sm-s2 vh100 psf r0 psn">
-        ${slidePage ? html`<div class="psf r0 t0 p1"><a href="${state.href}?slide=0">${icon()}</a></div>` : ''}
+        ${slidePage ? html`<div class="dn sm-db psf r0 t0 p1"><a href="${state.href}?slide=0">${icon()}</a></div>` : ''}
         <div class="os h100 p1">
           <div class="sm-dn c-blue mb1">
             <span class="db"><span class="c-red">2.</span> to</span>
