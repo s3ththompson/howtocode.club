@@ -12,9 +12,9 @@ function view (state, emit) {
 
   var subscribe = (state.query.subscribe == 'success') ? html`<p class="c-red">Subscribed!</p>` : html`<form class="mb1" action="https://jumprock.co/mail/howtocode" method="post">
     <input type="text" name="trapit" value="" style="display:none">
-    <input type="text" name="email" placeholder="Email Address" required />
+    <input class="w50 dib" type="text" name="email" placeholder="Email Address" required />
     <input type="hidden" name="after" value="https://howtocode.club/?subscribe=success">
-    <input class="c-blue" type="submit" value="→ Subscribe" />
+    <input class="c-blue" type="submit" value="Subscribe" />
   </form>`
 
   var content = html`<div>
@@ -33,7 +33,7 @@ function view (state, emit) {
           Introduction → <a href="/intro">notes</a>, <a href="/tools">tools</a>
         </li>
         <li>
-          Hypertext → July 16, 6:30pm ET, <a href="/hypertext">notes</a>
+          Hypertext → July 16, 6:30pm ET, <a href="/hypertext">notes</a>,  <a href="/archive">video</a>
         </li>
         <li>
           Style → July 23, 6:30pm ET
@@ -65,15 +65,16 @@ function view (state, emit) {
       </div>
       <div class="s2">
         <h4 class="mb0">Remote:</h4>
-        <p class="tdlt mb0">Live Stream</p>
-        <p class="tdlt">Video Archive</p>
+        <p class="mb0"><a href="/livestream">Live Stream</a></p>
+        <p><a href="/archive">Video Archive</a></p>
       </div>
     </div>
     <h3 class="c-gray">Subscribe for Updates</h3>
     ${subscribe}
     <h3 class="c-gray">Colophon</h3>
     <p class="mb0">Course taught by <a href="https://seththompson.org">Seth Thompson</a> (<a href="mailto:s3ththompson@gmail.com">s3ththompson@gmail.com</a>) and friends.</p>
-    <p>Cover design inspired by <span class="fsi">How to See</span> by <a href="https://www.theparisreview.org/blog/2016/09/19/quotable-david-salle/">David Salle</a>.</p>
+    <p class="mb0">Cover design inspired by <span class="fsi">How to See</span> by <a href="https://www.theparisreview.org/blog/2016/09/19/quotable-david-salle/">David Salle</a>.</p>
+    <p>Anonymous <a href="/feedback">feedback</a> appreciated and encouraged.</p>
   </div>`
 
   return page(content, state)

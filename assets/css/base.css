@@ -11,7 +11,7 @@ h1, h2, h3, h4, h5, h6, h7 {
   margin-bottom: 1.2rem;
 }
 
-button, input {
+button, input, textarea {
   outline: none;
 }
 
@@ -38,6 +38,19 @@ table {
 
 address {
   font-style: normal;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #909195;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #909195;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #909195;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #909195;
 }
 
 button {
@@ -127,4 +140,8 @@ span.title {
 .svg-icon circle {
   stroke: #909195;
   stroke-width: 1;
+}
+
+.w50 {
+  width: 50%;
 }

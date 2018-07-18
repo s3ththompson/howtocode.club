@@ -7,6 +7,7 @@ var opts = {
 
 var colors = {
   black: '#000',
+  darkgray: '#2a2a2a',
   white: '#fff',
   offwhite: '#fbfaf5',
   gray: '#909195',

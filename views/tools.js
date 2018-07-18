@@ -101,6 +101,7 @@ function view (state, emit) {
         <p><a class="arrow" href="https://docs.microsoft.com/en-us/windows/wsl/install-win10" target="_blank">Install the Windows Subsystem for Linux</a></p>
         <p><a class="arrow" href="https://docs.microsoft.com/en-us/windows/wsl/faq" target="_blank">Windows Subsystem for Linux FAQ</a></p>
         <p><a class="arrow" href="https://hackernoon.com/running-nodejs-on-linux-on-windows-88bd12993bae" target="_blank">Running Node.js on Linux on Windows</a></p>
+        <p>If you run into issues getting a Unix terminal running on Windows, please send <a href="/feedback">feedback</a>!</p>
       </div>`
   ]
 
