@@ -11,8 +11,8 @@ function view (state, emit) {
 
   var feedback = (state.query.submit == 'success') ? html`<p>Feedback submitted anonymously, thank you!</p>` : html`<form class="mb1" action="https://jumprock.co/mail/howtocodefeedback" method="post">
     <input type="text" name="trapit" value="" style="display:none">
-    <input class="db w100" type="text" name="subject" placeholder="Subject">
-    <textarea class="db w100 vhmn50" name="message" placeholder="Message here..." required></textarea>
+    <input class="db w100 mb1" type="text" name="subject" placeholder="Subject">
+    <textarea class="db w100 vhmn50 mb1" name="message" placeholder="Message here..." required></textarea>
     <input type="hidden" name="after" value="https://howtocode.club/feedback?submit=success">
     <input class="c-blue" type="submit" value="Submit" />
   </form>`

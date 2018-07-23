@@ -12,7 +12,7 @@ function view (state, emit) {
 
   var subscribe = (state.query.subscribe == 'success') ? html`<p class="c-red">Subscribed!</p>` : html`<form class="mb1" action="https://jumprock.co/mail/howtocode" method="post">
     <input type="text" name="trapit" value="" style="display:none">
-    <input class="w50 dib" type="text" name="email" placeholder="Email Address" required />
+    <input class="w50 dib mr1" type="text" name="email" placeholder="Email Address" required />
     <input type="hidden" name="after" value="https://howtocode.club/?subscribe=success">
     <input class="c-blue" type="submit" value="Subscribe" />
   </form>`
@@ -27,7 +27,7 @@ function view (state, emit) {
     <p>The class will meet once a week (usually on Monday nights). Lectures will be recorded and streamed for remote viewing.</p>
     <p>Class sessions will include a short lecture, group discussion, and review of individual projects.</p>
     <p>Students will be expected to spend time outside of class working on short assignments, continuing self-study, and completing an individual project.</p>
-    <h3 class="c-gray">Schedule <span class="c-red">[Beta session]</span></h3>
+    <h3 class="c-gray">Schedule <span class="label">Beta session</span></h3>
       <ol start=0>
         <li>
           Introduction → <a href="/intro">notes</a>, <a href="/tools">tools</a>
@@ -36,7 +36,7 @@ function view (state, emit) {
           Hypertext → July 16, 6:30pm ET, <a href="/hypertext">notes</a>,  <a href="/archive">video</a>
         </li>
         <li>
-          Style → July 23, 6:30pm ET
+          Style → July 23, 6:30pm ET, <a href="/style">notes</a>
         </li>
         <li>
           Script I → July 30, 6:30pm ET

@@ -11,8 +11,73 @@ h1, h2, h3, h4, h5, h6, h7 {
   margin-bottom: 1.2rem;
 }
 
+h1, h2, h3 {
+  font-size: 1.2rem;
+  color: #909195;
+}
+
 button, input, textarea {
   outline: none;
+}
+
+pre {
+  border-radius: .1rem;
+  color: #50596c;
+  margin-bottom: 1rem;
+}
+
+pre code {
+  background: rgba(177, 177, 177, 0.1);
+  color: inherit;
+  display: block;
+  line-height: 1.5;
+  overflow-x: auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+input, textarea {
+  background: #fff;
+  background-image: none;
+  border: .05rem solid #caced7;
+  border-radius: .1rem;
+  font-size: .8rem;
+  height: 1.8rem;
+  line-height: 1.2rem;
+  max-width: 100%;
+  outline: 0;
+  padding: .25rem .4rem;
+}
+
+input:focus, textarea:focus {
+  border-color: #5755d9;
+  box-shadow: 0 0 0 0.1rem rgba(87,85,217,.2);
+}
+
+button, [type="submit"] {
+  background-color: #fff;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.1rem;
+  border: 1px solid #263ffe;
+}
+
+button:hover, [type="submit"]:hover {
+  background: #263ffe;
+  color: white;
+}
+
+button:active, [type="submit"]:active {
+  background: #263ffe;
+  color: #c3caff;
+}
+
+.label {
+  background: #f0f1f4;
+  border-radius: .1rem;
+  color: #5b657a;
+  display: inline-block;
+  line-height: 1.2;
+  padding: .1rem .2rem;
 }
 
 ul, ol {

@@ -172,7 +172,7 @@ function view (state, emit) {
         <li>What will the home page of your site show?</li>
         <li>Which HTML elements best represent the parts of your content?</li>
       </ul>
-      <p>Deploy your project with <a href="https://www.netlify.com/">Netlify</a> or <a href="https://surge.sh/">Surge</a>. Both services offer free hosting for simple websites.</p>
+      <p>Deploy your project with <a href="https://www.netlify.com/" target="_blank">Netlify</a> or <a href="https://surge.sh/" target="_blank">Surge</a>. Both services offer free hosting for simple websites.</p>
     </div>`,
     html`<div>
       <h3 class="c-gray">Other Resources</h3>

@@ -10,7 +10,7 @@ var colors = {
   darkgray: '#2a2a2a',
   white: '#fff',
   offwhite: '#fbfaf5',
-  gray: '#909195',
+  gray: '#797979',
   red: '#ed3e29',
   blue: '#263ffe'
 }
@@ -52,7 +52,7 @@ opts.utils.push({
   prop: 'font-family',
   join: '-',
   vals: {
-    sans: `-apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif`,
+    sans: `-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif`,
     serif: `'Times New Roman', serif`
   }
 })
