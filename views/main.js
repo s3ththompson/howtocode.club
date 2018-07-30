@@ -39,7 +39,7 @@ function view (state, emit) {
           Style → July 23, 6:30pm ET, <a href="/style">notes</a>, <a href="/archive">video</a>
         </li>
         <li>
-          Script I → July 30, 6:30pm ET
+          Script I → July 30, 6:30pm ET, <a href="/script-i">notes</a>
         </li>
         <li>
           Script II → August 6, 6:30pm ET

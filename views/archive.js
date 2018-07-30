@@ -38,7 +38,7 @@ function view (state, emit) {
       <div class="c8">
         <h3 class="c-gray mb0">${v.title} (${v.length})</h3>
         <p>${v.date}</p>
-        <button class="c-blue" onclick=${play}>play</button><a class="button" href="${v.notes}">notes</a>
+        <button class="c-blue button" onclick=${play}>play</button><a class="button" href="${v.notes}">notes</a>
       </div>
     </div>`
 
