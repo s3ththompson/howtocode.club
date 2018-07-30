@@ -17,20 +17,28 @@ function view (state, emit) {
       notes: '/hypertext',
       thumb: '/assets/img/video-hypertext.jpg',
       url: 'https://how-to-code.s3.amazonaws.com/hypertext.mp4'
+    },
+    {
+      title: '2: Style',
+      date: 'July 23, 2018',
+      length: '01:42',
+      notes: '/style',
+      thumb: '/assets/img/video-style.jpg',
+      url: 'https://how-to-code.s3.amazonaws.com/style.mp4'
     }
   ]
 
   var video = videos[state.video.index]
 
-  var content = videos.map((video, i) => {
-    return html`<div class="c12 x xjb mb1">
-      <div class="c3 pr1">
-        <img class="mx100" src="${video.thumb}">
+  var content = videos.map((v, i) => {
+    return html`<div class="c12 x xjb mb1 video-card p1">
+      <div class="c3">
+        <img class="mx100" src="${v.thumb}">
       </div>
-      <div class="c9">
-        <h3 class="c-gray mb0">${video.title} (${video.length})</h3>
-        <p>${video.date}</p>
-        <p><button class="c-blue" onclick=${play}>play</button>, <a href="${video.notes}">notes</a></p>
+      <div class="c8">
+        <h3 class="c-gray mb0">${v.title} (${v.length})</h3>
+        <p>${v.date}</p>
+        <button class="c-blue" onclick=${play}>play</button><a class="button" href="${v.notes}">notes</a>
       </div>
     </div>`
 
@@ -42,10 +50,7 @@ function view (state, emit) {
   return html`<body class="ff-sans x xjb">
       <div class="dn sm-db s2 vh100 bgc-darkgray psf">
         <header class="c-blue x xjc xac h100">
-          <video controls poster="${video.thumb}" class="db w100 p1" >
-            <source
-              src="${video.url}"
-            type="video/mp4">
+          <video controls poster="${video.thumb}" class="db w100 p1" src="${video.url}" >
           </video>
         </header>
         <h2 class="psa t0 r0 l0 m1 c-gray tac">${video.title} (${video.length})</h2>

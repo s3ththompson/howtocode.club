@@ -33,10 +33,10 @@ function view (state, emit) {
           Introduction → <a href="/intro">notes</a>, <a href="/tools">tools</a>
         </li>
         <li>
-          Hypertext → July 16, 6:30pm ET, <a href="/hypertext">notes</a>,  <a href="/archive">video</a>
+          Hypertext → July 16, 6:30pm ET, <a href="/hypertext">notes</a>, <a href="/archive">video</a>
         </li>
         <li>
-          Style → July 23, 6:30pm ET, <a href="/style">notes</a>
+          Style → July 23, 6:30pm ET, <a href="/style">notes</a>, <a href="/archive">video</a>
         </li>
         <li>
           Script I → July 30, 6:30pm ET
@@ -69,6 +69,8 @@ function view (state, emit) {
         <p><a href="/archive">Video Archive</a></p>
       </div>
     </div>
+    <h3 class="c-gray">Join the Chatroom</h3>
+    <p>Join the discussion in the class Slack channel. Sign up <a href="http://chat.howtocode.club" target="_blank">here</a>, then head to: <a href="https://howtocodeclub.slack.com" target="_blank">howtocodeclub.slack.com</a></p>
     <h3 class="c-gray">Subscribe for Updates</h3>
     ${subscribe}
     <h3 class="c-gray">Colophon</h3>

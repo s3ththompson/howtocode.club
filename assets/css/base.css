@@ -20,6 +20,16 @@ button, input, textarea {
   outline: none;
 }
 
+
+button {
+  background:none;
+  color:inherit;
+  border:none; 
+  padding:0;
+  font: inherit;
+  cursor: pointer;
+}
+
 pre {
   border-radius: .1rem;
   color: #50596c;
@@ -54,19 +64,21 @@ input:focus, textarea:focus {
   box-shadow: 0 0 0 0.1rem rgba(87,85,217,.2);
 }
 
-button, [type="submit"] {
+button, [type="submit"], .button {
   background-color: #fff;
   padding: 0.1rem 0.3rem;
   border-radius: 0.1rem;
   border: 1px solid #263ffe;
+  display: inline-block;
+  margin-right: 0.3rem;
 }
 
-button:hover, [type="submit"]:hover {
+button:hover, [type="submit"]:hover, .button:hover {
   background: #263ffe;
   color: white;
 }
 
-button:active, [type="submit"]:active {
+button:active, [type="submit"]:active, .button:active {
   background: #263ffe;
   color: #c3caff;
 }
@@ -118,15 +130,6 @@ address {
   color: #909195;
 }
 
-button {
-  background:none!important;
-  color:inherit;
-  border:none; 
-  padding:0!important;
-  font: inherit;
-  cursor: pointer;
-}
-
 tt, code {
   font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
 }
@@ -137,6 +140,15 @@ code {
   font-size: 85%;
   background-color: rgba(27,31,35,0.05);
   border-radius: 3px;
+}
+
+.video-card {
+  border: .05rem solid #e7e9ed;
+  border-radius: .1rem;
+}
+
+.video-card:hover {
+  background: #f9f9f9;
 }
 
 .monoimage {
