@@ -25,6 +25,14 @@ function view (state, emit) {
       notes: '/style',
       thumb: '/assets/img/video-style.jpg',
       url: 'https://how-to-code.s3.amazonaws.com/style.mp4'
+    },
+    {
+      title: '3: Script I',
+      date: 'July 30, 2018',
+      length: '01:46',
+      notes: '/script-i',
+      thumb: '/assets/img/video-script-i.jpg',
+      url: 'https://how-to-code.s3.amazonaws.com/script-i.mp4'
     }
   ]
 
