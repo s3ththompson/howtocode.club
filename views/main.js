@@ -42,7 +42,7 @@ function view (state, emit) {
           Script I → July 30, 6:30pm ET, <a href="/script-i">notes</a>, <a href="/archive">video</a>
         </li>
         <li>
-          Script II → August 6, 6:30pm ET
+          Script II → August 6, 6:30pm ET, <a href="https://github.com/s3ththompson/howtocode/tree/master/4-script-ii" target="_blank">code</a>, <a href="/archive">video</a>
         </li>
         <li>
           Frameworks → TBA

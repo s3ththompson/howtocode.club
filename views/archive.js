@@ -33,6 +33,14 @@ function view (state, emit) {
       notes: '/script-i',
       thumb: '/assets/img/video-script-i.jpg',
       url: 'https://how-to-code.s3.amazonaws.com/script-i.mp4'
+    },
+    {
+      title: '4: Script II',
+      date: 'August 6, 2018',
+      length: '01:37',
+      notes: 'https://github.com/s3ththompson/howtocode/tree/master/4-script-ii',
+      thumb: '/assets/img/video-script-ii.jpg',
+      url: 'https://how-to-code.s3.amazonaws.com/script-ii.mp4'
     }
   ]
 
