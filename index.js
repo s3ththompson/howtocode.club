@@ -25,6 +25,7 @@ app.route('/intro', require('./views/intro'))
 app.route('/hypertext', require('./views/hypertext'))
 app.route('/style', require('./views/style'))
 app.route('/script-i', require('./views/script-i'))
+app.route('/script-iii', require('./views/script-iii'))
 app.route('/404', require('./views/404'))
 app.route('/*', require('./views/404'))
 

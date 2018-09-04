@@ -3,7 +3,7 @@ var html = require('choo/html')
 var page = require('./partials/page')
 var slide = require('./partials/slide')
 
-var TITLE = 'How To Code - 0: Intro'
+var TITLE = 'How To Code - 3: Script I'
 
 module.exports = view
 

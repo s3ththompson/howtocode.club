@@ -45,16 +45,19 @@ function view (state, emit) {
           Script II → August 6, 6:30pm ET, <a href="https://github.com/s3ththompson/howtocode/tree/master/4-script-ii" target="_blank">code</a>, <a href="/archive">video</a>
         </li>
         <li>
-          Script III → August 27, 6:30pm ET
+          Script III (Slideshow I) → August 27, 6:30pm ET, <a href="/script-iii">notes</a>, <a href="/archive">video</a>
         </li>
         <li>
-          Frameworks → September 3, 6:30pm ET
+          Script IV (Slideshow II) → September 3, 6:30pm ET, <a href="https://github.com/s3ththompson/howtocode/tree/master/6-script-iv" target="_blank">code</a>, <a href="/archive">video</a>
         </li>
         <li>
-          Introspection → September 10, 6:30pm ET
+          Frameworks → September 10, 6:30pm ET
         </li>
         <li>
-          Beyond → September 17, 6:30pm ET
+          Introspection → September 17, 6:30pm ET
+        </li>
+        <li>
+          Beyond → September 24, 6:30pm ET
         </li>
       </ol>
     <h3 class="c-gray">Location</h3>

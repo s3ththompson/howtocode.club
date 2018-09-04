@@ -41,6 +41,22 @@ function view (state, emit) {
       notes: 'https://github.com/s3ththompson/howtocode/tree/master/4-script-ii',
       thumb: '/assets/img/video-script-ii.jpg',
       url: 'https://how-to-code.s3.amazonaws.com/script-ii.mp4'
+    },
+    {
+      title: '5: Script III (Slideshow I)',
+      date: 'August 27, 2018',
+      length: '01:00',
+      notes: '/script-iii',
+      thumb: '/assets/img/video-script-iii.jpg',
+      url: 'https://how-to-code.s3.amazonaws.com/script-iii.mp4'
+    },
+    {
+      title: '6: Script IV (Slideshow II)',
+      date: 'September 3, 2018',
+      length: '01:24',
+      notes: 'https://github.com/s3ththompson/howtocode/tree/master/6-script-iv',
+      thumb: '/assets/img/video-script-iv.jpg',
+      url: 'https://how-to-code.s3.amazonaws.com/script-iv.mp4'
     }
   ]
 
