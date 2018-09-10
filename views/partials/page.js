@@ -24,7 +24,7 @@ module.exports = function (content, state) {
       </div>
       <div class="s1 sm-s2 vh100 psf r0 psn">
         ${slidePage ? html`<div class="dn sm-db psf r0 t0 p1"><a href="${state.href}?slide=0">${icon()}</a></div>` : ''}
-        <div class="os h100 p1">
+        <div class="oxh oys h100 p1">
           <div class="sm-dn c-blue mb1">
             <span class="db"><span class="c-red">2.</span> to</span>
             <span class="db"><span class="c-red">1.</span> How</span>
