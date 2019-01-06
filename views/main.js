@@ -10,13 +10,6 @@ module.exports = view
 function view (state, emit) {
   if (state.title !== TITLE) emit(state.events.DOMTITLECHANGE, TITLE)
 
-  var subscribe = (state.query.subscribe == 'success') ? html`<p class="c-red">Subscribed!</p>` : html`<form class="mb1" action="https://jumprock.co/mail/howtocode" method="post">
-    <input type="text" name="trapit" value="" style="display:none">
-    <input class="w50 dib mr1" type="text" name="email" placeholder="Email Address" required />
-    <input type="hidden" name="after" value="https://howtocode.club/?subscribe=success">
-    <input class="c-blue" type="submit" value="Subscribe" />
-  </form>`
-
   var content = html`<div>
     <h3 class="c-gray">Introduction</h3>
     <p>How to Code is a free summer course on making original, creative websites from scratch. Participants will learn how to use HTML, CSS, and JavaScript with a special emphasis on code style, debugging, and reading source.</p>
@@ -77,8 +70,6 @@ function view (state, emit) {
     </div>
     <h3 class="c-gray">Join the Chatroom</h3>
     <p>Join the discussion in the class Slack channel. Sign up <a href="http://chat.howtocode.club" target="_blank">here</a>, then head to: <a href="https://howtocodeclub.slack.com" target="_blank">howtocodeclub.slack.com</a></p>
-    <h3 class="c-gray">Subscribe for Updates</h3>
-    ${subscribe}
     <h3 class="c-gray">Colophon</h3>
     <p class="mb0">Course taught by <a href="https://seththompson.org">Seth Thompson</a> (<a href="mailto:s3ththompson@gmail.com">s3ththompson@gmail.com</a>) and friends.</p>
     <p class="mb0">Cover design inspired by <span class="fsi">How to See</span> by <a href="https://www.theparisreview.org/blog/2016/09/19/quotable-david-salle/">David Salle</a>.</p>
